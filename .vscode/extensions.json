@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "arjun.swagger-viewer",
+    "redhat.vscode-yaml",
+    "gruntfuggly.todo-tree"
+  ]
+}
