@@ -10,5 +10,18 @@ services:
       - "3000:3000"
     volumes:
       - .:/usr/src/app
+
+  auth:
+    build:
+      context: .
+      dockerfile: ./apps/auth/Dockerfile
+      target: development
+      # Override run command
+    command: pnpm run start:dev auth
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/src/app
+
   mongo:
     image: mongo
